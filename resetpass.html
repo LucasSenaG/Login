@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/layoutadmin.css">
+    <link rel="shortcut icon" href="/img/LOGOFUNDO.PNG" type="image/x-icon">
+    <script src="/js/script.js" defer></script>
+    <title>Recuperação de Senha</title>
+</head>
+<body>
+    <div class="background">
+        <div class="center">
+            <form action="/forgetpass" method="post" name="f1">
+                <input type="email" name="email" placeholder="E-mail" onblur="validationEmail(f1.email)">
+                <button type="submit">Enviar Código</button>
+                <div class="text">
+                    <label>Será enviado no seu e-mail um código de recuperação de senha, 
+                    você deverá inserir-lo ao tentar realizar o login novamente.</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

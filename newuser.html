@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/layoutadmin.css">
+    <link rel="shortcut icon" href="/img/LOGOFUNDO.PNG" type="image/x-icon">
+    <script src="/js/script.js" defer></script>
+    <title>Novo Usuário</title>
+</head>
+<body>
+    <div class="background">
+        <div class="center">
+            <form action="/createuser" method="post" name="f1">
+                <h3>NOVO USUÁRIO</h3>
+                <input type="text" name="user" placeholder="Nome">
+                <div class="pass">
+                    <input type="password" class="password" placeholder="Senha">
+                    <span class="eye"><img src="https://cdn-icons-png.flaticon.com/512/709/709612.png"></span>
+                </div>
+                <input type="email" name="email" placeholder="E-mail" onblur="validationEmail(f1.email)">
+                <input type="text" name="phone" class="phone" placeholder="Celuar">
+                <button type="submit">Criar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
